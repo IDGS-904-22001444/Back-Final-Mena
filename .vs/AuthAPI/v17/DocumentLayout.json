@@ -1,0 +1,366 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Jezuz\\OneDrive\\Escritorio\\ReptiTrack\\ProyectoMena\\Final-Mena\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A0BDD8BF-C580-4ACC-B471-DF785B1BFAD5}|AuthAPI\\AuthAPI.csproj|c:\\users\\jezuz\\onedrive\\escritorio\\reptitrack\\proyectomena\\final-mena\\authapi\\migrations\\20250731054111_response.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0BDD8BF-C580-4ACC-B471-DF785B1BFAD5}|AuthAPI\\AuthAPI.csproj|solutionrelative:authapi\\migrations\\20250731054111_response.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0BDD8BF-C580-4ACC-B471-DF785B1BFAD5}|AuthAPI\\AuthAPI.csproj|c:\\users\\jezuz\\onedrive\\escritorio\\reptitrack\\proyectomena\\final-mena\\authapi\\controllers\\customerreviewscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0BDD8BF-C580-4ACC-B471-DF785B1BFAD5}|AuthAPI\\AuthAPI.csproj|solutionrelative:authapi\\controllers\\customerreviewscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0BDD8BF-C580-4ACC-B471-DF785B1BFAD5}|AuthAPI\\AuthAPI.csproj|c:\\users\\jezuz\\onedrive\\escritorio\\reptitrack\\proyectomena\\final-mena\\authapi\\dtos\\replydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0BDD8BF-C580-4ACC-B471-DF785B1BFAD5}|AuthAPI\\AuthAPI.csproj|solutionrelative:authapi\\dtos\\replydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0BDD8BF-C580-4ACC-B471-DF785B1BFAD5}|AuthAPI\\AuthAPI.csproj|c:\\users\\jezuz\\onedrive\\escritorio\\reptitrack\\proyectomena\\final-mena\\authapi\\model\\customerreview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0BDD8BF-C580-4ACC-B471-DF785B1BFAD5}|AuthAPI\\AuthAPI.csproj|solutionrelative:authapi\\model\\customerreview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0BDD8BF-C580-4ACC-B471-DF785B1BFAD5}|AuthAPI\\AuthAPI.csproj|c:\\users\\jezuz\\onedrive\\escritorio\\reptitrack\\proyectomena\\final-mena\\authapi\\dtos\\customerreviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0BDD8BF-C580-4ACC-B471-DF785B1BFAD5}|AuthAPI\\AuthAPI.csproj|solutionrelative:authapi\\dtos\\customerreviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0BDD8BF-C580-4ACC-B471-DF785B1BFAD5}|AuthAPI\\AuthAPI.csproj|c:\\users\\jezuz\\onedrive\\escritorio\\reptitrack\\proyectomena\\final-mena\\authapi\\controllers\\faqscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0BDD8BF-C580-4ACC-B471-DF785B1BFAD5}|AuthAPI\\AuthAPI.csproj|solutionrelative:authapi\\controllers\\faqscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0BDD8BF-C580-4ACC-B471-DF785B1BFAD5}|AuthAPI\\AuthAPI.csproj|c:\\users\\jezuz\\onedrive\\escritorio\\reptitrack\\proyectomena\\final-mena\\authapi\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0BDD8BF-C580-4ACC-B471-DF785B1BFAD5}|AuthAPI\\AuthAPI.csproj|solutionrelative:authapi\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0BDD8BF-C580-4ACC-B471-DF785B1BFAD5}|AuthAPI\\AuthAPI.csproj|c:\\users\\jezuz\\onedrive\\escritorio\\reptitrack\\proyectomena\\final-mena\\authapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A0BDD8BF-C580-4ACC-B471-DF785B1BFAD5}|AuthAPI\\AuthAPI.csproj|solutionrelative:authapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0BDD8BF-C580-4ACC-B471-DF785B1BFAD5}|AuthAPI\\AuthAPI.csproj|c:\\users\\jezuz\\onedrive\\escritorio\\reptitrack\\proyectomena\\final-mena\\authapi\\dtos\\faqdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0BDD8BF-C580-4ACC-B471-DF785B1BFAD5}|AuthAPI\\AuthAPI.csproj|solutionrelative:authapi\\dtos\\faqdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0BDD8BF-C580-4ACC-B471-DF785B1BFAD5}|AuthAPI\\AuthAPI.csproj|c:\\users\\jezuz\\onedrive\\escritorio\\reptitrack\\proyectomena\\final-mena\\authapi\\model\\faq.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0BDD8BF-C580-4ACC-B471-DF785B1BFAD5}|AuthAPI\\AuthAPI.csproj|solutionrelative:authapi\\model\\faq.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0BDD8BF-C580-4ACC-B471-DF785B1BFAD5}|AuthAPI\\AuthAPI.csproj|c:\\users\\jezuz\\onedrive\\escritorio\\reptitrack\\proyectomena\\final-mena\\authapi\\controllers\\documentacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0BDD8BF-C580-4ACC-B471-DF785B1BFAD5}|AuthAPI\\AuthAPI.csproj|solutionrelative:authapi\\controllers\\documentacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0BDD8BF-C580-4ACC-B471-DF785B1BFAD5}|AuthAPI\\AuthAPI.csproj|c:\\users\\jezuz\\onedrive\\escritorio\\reptitrack\\proyectomena\\final-mena\\authapi\\dtos\\uploadfiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0BDD8BF-C580-4ACC-B471-DF785B1BFAD5}|AuthAPI\\AuthAPI.csproj|solutionrelative:authapi\\dtos\\uploadfiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0BDD8BF-C580-4ACC-B471-DF785B1BFAD5}|AuthAPI\\AuthAPI.csproj|c:\\users\\jezuz\\onedrive\\escritorio\\reptitrack\\proyectomena\\final-mena\\authapi\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0BDD8BF-C580-4ACC-B471-DF785B1BFAD5}|AuthAPI\\AuthAPI.csproj|solutionrelative:authapi\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0BDD8BF-C580-4ACC-B471-DF785B1BFAD5}|AuthAPI\\AuthAPI.csproj|c:\\users\\jezuz\\onedrive\\escritorio\\reptitrack\\proyectomena\\final-mena\\authapi\\dtos\\rolesassingdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0BDD8BF-C580-4ACC-B471-DF785B1BFAD5}|AuthAPI\\AuthAPI.csproj|solutionrelative:authapi\\dtos\\rolesassingdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0BDD8BF-C580-4ACC-B471-DF785B1BFAD5}|AuthAPI\\AuthAPI.csproj|c:\\users\\jezuz\\onedrive\\escritorio\\reptitrack\\proyectomena\\final-mena\\authapi\\controllers\\providerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0BDD8BF-C580-4ACC-B471-DF785B1BFAD5}|AuthAPI\\AuthAPI.csproj|solutionrelative:authapi\\controllers\\providerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0BDD8BF-C580-4ACC-B471-DF785B1BFAD5}|AuthAPI\\AuthAPI.csproj|c:\\users\\jezuz\\onedrive\\escritorio\\reptitrack\\proyectomena\\final-mena\\authapi\\controllers\\purchasescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0BDD8BF-C580-4ACC-B471-DF785B1BFAD5}|AuthAPI\\AuthAPI.csproj|solutionrelative:authapi\\controllers\\purchasescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0BDD8BF-C580-4ACC-B471-DF785B1BFAD5}|AuthAPI\\AuthAPI.csproj|c:\\users\\jezuz\\onedrive\\escritorio\\reptitrack\\proyectomena\\final-mena\\authapi\\dtos\\purchasedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0BDD8BF-C580-4ACC-B471-DF785B1BFAD5}|AuthAPI\\AuthAPI.csproj|solutionrelative:authapi\\dtos\\purchasedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0BDD8BF-C580-4ACC-B471-DF785B1BFAD5}|AuthAPI\\AuthAPI.csproj|c:\\users\\jezuz\\onedrive\\escritorio\\reptitrack\\proyectomena\\final-mena\\authapi\\dtos\\purchasedetaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0BDD8BF-C580-4ACC-B471-DF785B1BFAD5}|AuthAPI\\AuthAPI.csproj|solutionrelative:authapi\\dtos\\purchasedetaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0BDD8BF-C580-4ACC-B471-DF785B1BFAD5}|AuthAPI\\AuthAPI.csproj|c:\\users\\jezuz\\onedrive\\escritorio\\reptitrack\\proyectomena\\final-mena\\authapi\\controllers\\purchasedetailscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0BDD8BF-C580-4ACC-B471-DF785B1BFAD5}|AuthAPI\\AuthAPI.csproj|solutionrelative:authapi\\controllers\\purchasedetailscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0BDD8BF-C580-4ACC-B471-DF785B1BFAD5}|AuthAPI\\AuthAPI.csproj|c:\\users\\jezuz\\onedrive\\escritorio\\reptitrack\\proyectomena\\final-mena\\authapi\\model\\purchase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0BDD8BF-C580-4ACC-B471-DF785B1BFAD5}|AuthAPI\\AuthAPI.csproj|solutionrelative:authapi\\model\\purchase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0BDD8BF-C580-4ACC-B471-DF785B1BFAD5}|AuthAPI\\AuthAPI.csproj|c:\\users\\jezuz\\onedrive\\escritorio\\reptitrack\\proyectomena\\final-mena\\authapi\\model\\sale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0BDD8BF-C580-4ACC-B471-DF785B1BFAD5}|AuthAPI\\AuthAPI.csproj|solutionrelative:authapi\\model\\sale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "20250731054111_Response.cs",
+              "DocumentMoniker": "C:\\Users\\Jezuz\\OneDrive\\Escritorio\\ReptiTrack\\ProyectoMena\\Final-Mena\\AuthAPI\\Migrations\\20250731054111_Response.cs",
+              "RelativeDocumentMoniker": "AuthAPI\\Migrations\\20250731054111_Response.cs",
+              "ToolTip": "C:\\Users\\Jezuz\\OneDrive\\Escritorio\\ReptiTrack\\ProyectoMena\\Final-Mena\\AuthAPI\\Migrations\\20250731054111_Response.cs",
+              "RelativeToolTip": "AuthAPI\\Migrations\\20250731054111_Response.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-31T05:41:13.086Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ReplyDto.cs",
+              "DocumentMoniker": "C:\\Users\\Jezuz\\OneDrive\\Escritorio\\ReptiTrack\\ProyectoMena\\Final-Mena\\AuthAPI\\Dtos\\ReplyDto.cs",
+              "RelativeDocumentMoniker": "AuthAPI\\Dtos\\ReplyDto.cs",
+              "ToolTip": "C:\\Users\\Jezuz\\OneDrive\\Escritorio\\ReptiTrack\\ProyectoMena\\Final-Mena\\AuthAPI\\Dtos\\ReplyDto.cs",
+              "RelativeToolTip": "AuthAPI\\Dtos\\ReplyDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-31T05:37:57.005Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CustomerReviewsController.cs",
+              "DocumentMoniker": "C:\\Users\\Jezuz\\OneDrive\\Escritorio\\ReptiTrack\\ProyectoMena\\Final-Mena\\AuthAPI\\Controllers\\CustomerReviewsController.cs",
+              "RelativeDocumentMoniker": "AuthAPI\\Controllers\\CustomerReviewsController.cs",
+              "ToolTip": "C:\\Users\\Jezuz\\OneDrive\\Escritorio\\ReptiTrack\\ProyectoMena\\Final-Mena\\AuthAPI\\Controllers\\CustomerReviewsController.cs",
+              "RelativeToolTip": "AuthAPI\\Controllers\\CustomerReviewsController.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAswD0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-30T05:23:28.506Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CustomerReviewDto.cs",
+              "DocumentMoniker": "C:\\Users\\Jezuz\\OneDrive\\Escritorio\\ReptiTrack\\ProyectoMena\\Final-Mena\\AuthAPI\\Dtos\\CustomerReviewDto.cs",
+              "RelativeDocumentMoniker": "AuthAPI\\Dtos\\CustomerReviewDto.cs",
+              "ToolTip": "C:\\Users\\Jezuz\\OneDrive\\Escritorio\\ReptiTrack\\ProyectoMena\\Final-Mena\\AuthAPI\\Dtos\\CustomerReviewDto.cs",
+              "RelativeToolTip": "AuthAPI\\Dtos\\CustomerReviewDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-30T05:22:05.322Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CustomerReview.cs",
+              "DocumentMoniker": "C:\\Users\\Jezuz\\OneDrive\\Escritorio\\ReptiTrack\\ProyectoMena\\Final-Mena\\AuthAPI\\Model\\CustomerReview.cs",
+              "RelativeDocumentMoniker": "AuthAPI\\Model\\CustomerReview.cs",
+              "ToolTip": "C:\\Users\\Jezuz\\OneDrive\\Escritorio\\ReptiTrack\\ProyectoMena\\Final-Mena\\AuthAPI\\Model\\CustomerReview.cs",
+              "RelativeToolTip": "AuthAPI\\Model\\CustomerReview.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAWwAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-30T05:21:11.295Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FaqsController.cs",
+              "DocumentMoniker": "C:\\Users\\Jezuz\\OneDrive\\Escritorio\\ReptiTrack\\ProyectoMena\\Final-Mena\\AuthAPI\\Controllers\\FaqsController.cs",
+              "RelativeDocumentMoniker": "AuthAPI\\Controllers\\FaqsController.cs",
+              "ToolTip": "C:\\Users\\Jezuz\\OneDrive\\Escritorio\\ReptiTrack\\ProyectoMena\\Final-Mena\\AuthAPI\\Controllers\\FaqsController.cs",
+              "RelativeToolTip": "AuthAPI\\Controllers\\FaqsController.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAwwC4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-30T05:34:24.615Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Jezuz\\OneDrive\\Escritorio\\ReptiTrack\\ProyectoMena\\Final-Mena\\AuthAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "AuthAPI\\appsettings.json",
+              "ToolTip": "C:\\Users\\Jezuz\\OneDrive\\Escritorio\\ReptiTrack\\ProyectoMena\\Final-Mena\\AuthAPI\\appsettings.json",
+              "RelativeToolTip": "AuthAPI\\appsettings.json",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAuwB0AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-28T02:31:57.705Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Jezuz\\OneDrive\\Escritorio\\ReptiTrack\\ProyectoMena\\Final-Mena\\AuthAPI\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "AuthAPI\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\Jezuz\\OneDrive\\Escritorio\\ReptiTrack\\ProyectoMena\\Final-Mena\\AuthAPI\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "AuthAPI\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAwwBoAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-30T05:23:48.893Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Faq.cs",
+              "DocumentMoniker": "C:\\Users\\Jezuz\\OneDrive\\Escritorio\\ReptiTrack\\ProyectoMena\\Final-Mena\\AuthAPI\\Model\\Faq.cs",
+              "RelativeDocumentMoniker": "AuthAPI\\Model\\Faq.cs",
+              "ToolTip": "C:\\Users\\Jezuz\\OneDrive\\Escritorio\\ReptiTrack\\ProyectoMena\\Final-Mena\\AuthAPI\\Model\\Faq.cs",
+              "RelativeToolTip": "AuthAPI\\Model\\Faq.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-30T05:24:09.174Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FaqDto.cs",
+              "DocumentMoniker": "C:\\Users\\Jezuz\\OneDrive\\Escritorio\\ReptiTrack\\ProyectoMena\\Final-Mena\\AuthAPI\\Dtos\\FaqDto.cs",
+              "RelativeDocumentMoniker": "AuthAPI\\Dtos\\FaqDto.cs",
+              "ToolTip": "C:\\Users\\Jezuz\\OneDrive\\Escritorio\\ReptiTrack\\ProyectoMena\\Final-Mena\\AuthAPI\\Dtos\\FaqDto.cs",
+              "RelativeToolTip": "AuthAPI\\Dtos\\FaqDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-30T05:24:23.196Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UploadFileDto.cs",
+              "DocumentMoniker": "C:\\Users\\Jezuz\\OneDrive\\Escritorio\\ReptiTrack\\ProyectoMena\\Final-Mena\\AuthAPI\\Dtos\\UploadFileDto.cs",
+              "RelativeDocumentMoniker": "AuthAPI\\Dtos\\UploadFileDto.cs",
+              "ToolTip": "C:\\Users\\Jezuz\\OneDrive\\Escritorio\\ReptiTrack\\ProyectoMena\\Final-Mena\\AuthAPI\\Dtos\\UploadFileDto.cs",
+              "RelativeToolTip": "AuthAPI\\Dtos\\UploadFileDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-28T04:29:01.512Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DocumentacionController.cs",
+              "DocumentMoniker": "C:\\Users\\Jezuz\\OneDrive\\Escritorio\\ReptiTrack\\ProyectoMena\\Final-Mena\\AuthAPI\\Controllers\\DocumentacionController.cs",
+              "RelativeDocumentMoniker": "AuthAPI\\Controllers\\DocumentacionController.cs",
+              "ToolTip": "C:\\Users\\Jezuz\\OneDrive\\Escritorio\\ReptiTrack\\ProyectoMena\\Final-Mena\\AuthAPI\\Controllers\\DocumentacionController.cs",
+              "RelativeToolTip": "AuthAPI\\Controllers\\DocumentacionController.cs",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAwwGkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-28T04:22:18.83Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\Jezuz\\OneDrive\\Escritorio\\ReptiTrack\\ProyectoMena\\Final-Mena\\AuthAPI\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "AuthAPI\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\Jezuz\\OneDrive\\Escritorio\\ReptiTrack\\ProyectoMena\\Final-Mena\\AuthAPI\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "AuthAPI\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAALABAAAAAAAAAAAiwMwBAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-28T02:09:55.369Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "RolesAssingDto.cs",
+              "DocumentMoniker": "C:\\Users\\Jezuz\\OneDrive\\Escritorio\\ReptiTrack\\ProyectoMena\\Final-Mena\\AuthAPI\\Dtos\\RolesAssingDto.cs",
+              "RelativeDocumentMoniker": "AuthAPI\\Dtos\\RolesAssingDto.cs",
+              "ToolTip": "C:\\Users\\Jezuz\\OneDrive\\Escritorio\\ReptiTrack\\ProyectoMena\\Final-Mena\\AuthAPI\\Dtos\\RolesAssingDto.cs",
+              "RelativeToolTip": "AuthAPI\\Dtos\\RolesAssingDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-28T01:02:44.569Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ProvidersController.cs",
+              "DocumentMoniker": "C:\\Users\\Jezuz\\OneDrive\\Escritorio\\ReptiTrack\\ProyectoMena\\Final-Mena\\AuthAPI\\Controllers\\ProvidersController.cs",
+              "RelativeDocumentMoniker": "AuthAPI\\Controllers\\ProvidersController.cs",
+              "ToolTip": "C:\\Users\\Jezuz\\OneDrive\\Escritorio\\ReptiTrack\\ProyectoMena\\Final-Mena\\AuthAPI\\Controllers\\ProvidersController.cs",
+              "RelativeToolTip": "AuthAPI\\Controllers\\ProvidersController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-27T00:03:12.799Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "PurchaseDetailDto.cs",
+              "DocumentMoniker": "C:\\Users\\Jezuz\\OneDrive\\Escritorio\\ReptiTrack\\ProyectoMena\\Final-Mena\\AuthAPI\\Dtos\\PurchaseDetailDto.cs",
+              "RelativeDocumentMoniker": "AuthAPI\\Dtos\\PurchaseDetailDto.cs",
+              "ToolTip": "C:\\Users\\Jezuz\\OneDrive\\Escritorio\\ReptiTrack\\ProyectoMena\\Final-Mena\\AuthAPI\\Dtos\\PurchaseDetailDto.cs",
+              "RelativeToolTip": "AuthAPI\\Dtos\\PurchaseDetailDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T22:10:44.884Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "PurchaseDto.cs",
+              "DocumentMoniker": "C:\\Users\\Jezuz\\OneDrive\\Escritorio\\ReptiTrack\\ProyectoMena\\Final-Mena\\AuthAPI\\Dtos\\PurchaseDto.cs",
+              "RelativeDocumentMoniker": "AuthAPI\\Dtos\\PurchaseDto.cs",
+              "ToolTip": "C:\\Users\\Jezuz\\OneDrive\\Escritorio\\ReptiTrack\\ProyectoMena\\Final-Mena\\AuthAPI\\Dtos\\PurchaseDto.cs",
+              "RelativeToolTip": "AuthAPI\\Dtos\\PurchaseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T22:09:20.645Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "PurchasesController.cs",
+              "DocumentMoniker": "C:\\Users\\Jezuz\\OneDrive\\Escritorio\\ReptiTrack\\ProyectoMena\\Final-Mena\\AuthAPI\\Controllers\\PurchasesController.cs",
+              "RelativeDocumentMoniker": "AuthAPI\\Controllers\\PurchasesController.cs",
+              "ToolTip": "C:\\Users\\Jezuz\\OneDrive\\Escritorio\\ReptiTrack\\ProyectoMena\\Final-Mena\\AuthAPI\\Controllers\\PurchasesController.cs",
+              "RelativeToolTip": "AuthAPI\\Controllers\\PurchasesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD0AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T22:03:09.236Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "PurchaseDetailsController.cs",
+              "DocumentMoniker": "C:\\Users\\Jezuz\\OneDrive\\Escritorio\\ReptiTrack\\ProyectoMena\\Final-Mena\\AuthAPI\\Controllers\\PurchaseDetailsController.cs",
+              "RelativeDocumentMoniker": "AuthAPI\\Controllers\\PurchaseDetailsController.cs",
+              "ToolTip": "C:\\Users\\Jezuz\\OneDrive\\Escritorio\\ReptiTrack\\ProyectoMena\\Final-Mena\\AuthAPI\\Controllers\\PurchaseDetailsController.cs",
+              "RelativeToolTip": "AuthAPI\\Controllers\\PurchaseDetailsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T22:03:33.013Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Purchase.cs",
+              "DocumentMoniker": "C:\\Users\\Jezuz\\OneDrive\\Escritorio\\ReptiTrack\\ProyectoMena\\Final-Mena\\AuthAPI\\Model\\Purchase.cs",
+              "RelativeDocumentMoniker": "AuthAPI\\Model\\Purchase.cs",
+              "ToolTip": "C:\\Users\\Jezuz\\OneDrive\\Escritorio\\ReptiTrack\\ProyectoMena\\Final-Mena\\AuthAPI\\Model\\Purchase.cs",
+              "RelativeToolTip": "AuthAPI\\Model\\Purchase.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T21:10:07.839Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Sale.cs",
+              "DocumentMoniker": "C:\\Users\\Jezuz\\OneDrive\\Escritorio\\ReptiTrack\\ProyectoMena\\Final-Mena\\AuthAPI\\Model\\Sale.cs",
+              "RelativeDocumentMoniker": "AuthAPI\\Model\\Sale.cs",
+              "ToolTip": "C:\\Users\\Jezuz\\OneDrive\\Escritorio\\ReptiTrack\\ProyectoMena\\Final-Mena\\AuthAPI\\Model\\Sale.cs",
+              "RelativeToolTip": "AuthAPI\\Model\\Sale.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T08:08:11.685Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
