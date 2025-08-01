@@ -7,7 +7,6 @@ using Microsoft.EntityFrameworkCore;
 
 namespace AuthAPI.Controllers
 {
-    [Authorize(Roles = "Admin")]
     [ApiController]
     [Route("api/[controller]")]
     public class ProductsController : ControllerBase
@@ -19,14 +18,18 @@ namespace AuthAPI.Controllers
             _context = context;
         }
 
+        // GET: api/products
         [HttpGet]
+        [AllowAnonymous]
         public async Task<ActionResult<IEnumerable<Product>>> GetAll()
         {
             var products = await _context.Products.ToListAsync();
             return Ok(products);
         }
 
+        // GET: api/products/{id}
         [HttpGet("{id}")]
+        [AllowAnonymous]
         public async Task<ActionResult<Product>> GetById(int id)
         {
             var product = await _context.Products.FindAsync(id);
@@ -35,7 +38,9 @@ namespace AuthAPI.Controllers
             return Ok(product);
         }
 
+        // POST: api/products
         [HttpPost]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Create([FromBody] ProductDto dto)
         {
             if (!ModelState.IsValid)
@@ -55,7 +60,9 @@ namespace AuthAPI.Controllers
             return Ok(product);
         }
 
+        // PUT: api/products/{id}
         [HttpPut("{id}")]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Update(int id, [FromBody] ProductDto dto)
         {
             var product = await _context.Products.FindAsync(id);
@@ -72,7 +79,9 @@ namespace AuthAPI.Controllers
             return Ok(product);
         }
 
+        // DELETE: api/products/{id}
         [HttpDelete("{id}")]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int id)
         {
             var product = await _context.Products.FindAsync(id);

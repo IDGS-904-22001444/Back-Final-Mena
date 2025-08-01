@@ -2,8 +2,9 @@
 {
     public class CustomerReviewDto
     {
-        public int ClientId { get; set; }
+        public string ClientId { get; set; } // Cambiado a string
         public string Comment { get; set; }
         public int Rating { get; set; }
+        public DateTime CreatedAt { get; set; } // Nuevo campo
     }
 }

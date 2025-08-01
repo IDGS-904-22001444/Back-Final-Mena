@@ -71,7 +71,7 @@ namespace AuthAPI.Controllers
                 }
             }
 
-            // Enviar correo al administrador con mejor diseño
+            // --- Correo al administrador con diseño mejorado ---
             var adminSettings = _configuration.GetSection("AdminSettings");
             var adminEmail = adminSettings["AdminEmail"];
             var adminName = adminSettings["AdminName"];
@@ -90,31 +90,37 @@ namespace AuthAPI.Controllers
             message.Subject = "Nuevo registro de usuario";
 
             var htmlBody = $@"
-    <div style='max-width:600px;margin:30px auto;padding:30px 40px;background:#f9f9f9;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.07);font-family:Segoe UI,Arial,sans-serif;color:#222;'>
-        <div style='text-align:center;margin-bottom:24px;'>
-            <img src='https://i.imgur.com/8Km9tLL.png' alt='ReptiTrack' style='width:60px;height:60px;border-radius:50%;background:#4CAF50;margin-bottom:10px;'/>
-            <h2 style='color:#4CAF50;margin:0;'>Nuevo usuario registrado</h2>
+<div style='max-width:600px;margin:30px auto;padding:0;background:#f9f9f9;border-radius:16px;box-shadow:0 2px 8px rgba(0,0,0,0.07);font-family:Segoe UI,Arial,sans-serif;color:#222;'>
+    <div style='background:#fafafa;border-radius:16px;padding:40px 40px 32px 40px;text-align:center;'>
+        <div style='margin-bottom:18px;'>
+            <div style='width:70px;height:70px;border-radius:50%;background:#1976d2;display:inline-block;line-height:70px;font-size:32px;color:#fff;font-weight:bold;'>
+                {(!string.IsNullOrWhiteSpace(user.FullName) ? user.FullName.Substring(0, 1).ToUpper() : "U")}
+            </div>
         </div>
-        <table style='width:100%;margin-bottom:24px;'>
+        <h2 style='color:#43a047;font-size:1.7em;margin-bottom:24px;margin-top:0;'>Nuevo usuario registrado</h2>
+        <table style='margin:0 auto 24px auto;text-align:left;'>
             <tr>
-                <td style='font-weight:bold;padding:8px 0;width:120px;'>Nombre:</td>
-                <td style='padding:8px 0;'>{user.FullName}</td>
+                <td style='font-weight:bold;padding:8px 0 8px 0;'>Nombre:</td>
+                <td style='padding:8px 0 8px 16px;'>{user.FullName}</td>
             </tr>
             <tr>
-                <td style='font-weight:bold;padding:8px 0;'>Email:</td>
-                <td style='padding:8px 0;'><a href='mailto:{user.Email}' style='color:#1976d2;text-decoration:none;'>{user.Email}</a></td>
+                <td style='font-weight:bold;padding:8px 0 8px 0;'>Email:</td>
+                <td style='padding:8px 0 8px 16px;'>
+                    <a href='mailto:{user.Email}' style='color:#1976d2;text-decoration:none;'>{user.Email}</a>
+                </td>
             </tr>
         </table>
         <div style='margin-bottom:24px;'>
-            <span style='display:inline-block;padding:10px 18px;background:#e3f2fd;color:#1976d2;border-radius:6px;font-size:15px;'>
+            <span style='display:inline-block;padding:14px 24px;background:#e3f2fd;color:#1976d2;border-radius:8px;font-size:16px;'>
                 Revisa el panel de administración para asignar credenciales o activar la cuenta.
             </span>
         </div>
-        <div style='text-align:center;color:#888;font-size:13px;margin-top:30px;'>
+        <div style='text-align:center;color:#888;font-size:14px;margin-top:30px;'>
             ReptiTrack &copy; {DateTime.Now.Year}
         </div>
     </div>
-    ";
+</div>
+";
 
             message.Body = new MimeKit.TextPart("html") { Text = htmlBody };
 
@@ -127,10 +133,9 @@ namespace AuthAPI.Controllers
             return Ok(new AuthResponseDto
             {
                 IsSuccess = true,
-                Message = "Account Created Sucessfully!!!"
+                Message = "Cuenta creada con exito!!!"
             });
         }
-
         //api/account/login
         [AllowAnonymous]
         [HttpPost("login")]
@@ -159,7 +164,7 @@ namespace AuthAPI.Controllers
                 return Unauthorized(new AuthResponseDto
                 {
                     IsSuccess = false,
-                    Message = "Invalid Password"
+                    Message = "Contraseña incorrecta"
                 });
             }
 
@@ -175,7 +180,7 @@ namespace AuthAPI.Controllers
             {
                 Token = token,
                 IsSuccess = true,
-                Message = "Login Success",
+                Message = "Inicio de sesion correcto!",
                 RefreshToken = refreshToken
             });
         }
@@ -197,7 +202,7 @@ namespace AuthAPI.Controllers
             var user = await _userManager.FindByIdAsync(id);
 
             if (user == null)
-                return NotFound(new AuthResponseDto { IsSuccess = false, Message = "User not found" });
+                return NotFound(new AuthResponseDto { IsSuccess = false, Message = "El usuario no fue encontrado!" });
 
             user.FullName = updateDto.FullName ?? user.FullName;
             user.Email = updateDto.Email ?? user.Email;
@@ -219,7 +224,7 @@ namespace AuthAPI.Controllers
             var user = await _userManager.FindByIdAsync(id);
 
             if (user == null)
-                return NotFound(new AuthResponseDto { IsSuccess = false, Message = "User not found" });
+                return NotFound(new AuthResponseDto { IsSuccess = false, Message = "El usuario no fue encontrado!" });
 
             var result = await _userManager.DeleteAsync(user);
             if (!result.Succeeded)
@@ -228,7 +233,6 @@ namespace AuthAPI.Controllers
             return Ok(new { message = "Usuario eliminado correctamente por el administrador" });
         }
 
-        // api/account/forgot-password
         [AllowAnonymous]
         [HttpPost("forgot-password")]
         public async Task<ActionResult<AuthResponseDto>> ForgotPassword([FromBody] ForgotPasswordDto forgotPasswordDto)
@@ -243,7 +247,7 @@ namespace AuthAPI.Controllers
                 return Ok(new AuthResponseDto
                 {
                     IsSuccess = false,
-                    Message = "User does not exist with this email"
+                    Message = "El usuario no existe con este correo electrónico"
                 });
             }
 
@@ -259,31 +263,26 @@ namespace AuthAPI.Controllers
             var smtpUser = mailSettings["UserName"];
             var smtpPass = mailSettings["Password"];
 
-            // Enviar correo con HTML
+            // Correo con diseño mejorado
             var message = new MimeKit.MimeMessage();
             message.From.Add(new MimeKit.MailboxAddress(displayName, email));
             message.To.Add(new MimeKit.MailboxAddress(user.FullName ?? user.Email, user.Email));
             message.Subject = "Recuperación de contraseña";
 
             var htmlBody = $@"
-        <div style='font-family: Arial, sans-serif; color: #333;'>
-            <h2>Hola {user.FullName ?? user.Email},</h2>
-            <p>Recibimos una solicitud para restablecer tu contraseña.</p>
-            <p>
-                <a href='{resetLink}' style='
-                    display: inline-block;
-                    padding: 10px 20px;
-                    background-color: #4CAF50;
-                    color: white;
-                    text-decoration: none;
-                    border-radius: 5px;
-                    font-weight: bold;
-                '>Restablecer contraseña</a>
-            </p>
-            <p>Si no solicitaste este cambio, puedes ignorar este correo.</p>
-            <br>
-            <p style='font-size:12px;color:#888;'>ReptiTrack &copy; {DateTime.Now.Year}</p>
-        </div>";
+<div style='max-width:600px;margin:30px auto;padding:0;background:#f9f9f9;border-radius:16px;box-shadow:0 2px 8px rgba(0,0,0,0.07);font-family:Segoe UI,Arial,sans-serif;color:#222;'>
+    <div style='background:#fafafa;border-radius:16px;padding:40px 40px 32px 40px;text-align:center;'>
+        <h2 style='color:#43a047;font-size:1.5em;margin-bottom:24px;margin-top:0;'>Recuperación de contraseña</h2>
+        <p style='font-size:1.1em;'>Hola <b>{user.FullName ?? user.Email}</b>,</p>
+        <p>Recibimos una solicitud para restablecer tu contraseña.</p>
+        <a href='{resetLink}' style='display:inline-block;padding:12px 28px;background-color:#1976d2;color:white;text-decoration:none;border-radius:8px;font-weight:bold;font-size:16px;margin:18px 0;'>Restablecer contraseña</a>
+        <p style='color:#888;font-size:14px;margin-top:18px;'>Si no solicitaste este cambio, puedes ignorar este correo.</p>
+        <div style='text-align:center;color:#888;font-size:14px;margin-top:30px;'>
+            ReptiTrack &copy; {DateTime.Now.Year}
+        </div>
+    </div>
+</div>
+";
 
             message.Body = new MimeKit.TextPart("html") { Text = htmlBody };
 
@@ -300,10 +299,6 @@ namespace AuthAPI.Controllers
             });
         }
 
-       
-
-
-
 
         [HttpPost("change-password")]
         public async Task<IActionResult> ChangePassword([FromBody] ChangePasswordDto change)
@@ -314,7 +309,7 @@ namespace AuthAPI.Controllers
                 return BadRequest(new AuthResponseDto
                 {
                     IsSuccess = false,
-                    Message = "User does not exist with this email"
+                    Message = "El usuario no existe con este correo electrónico"
                 });
             }
 
@@ -324,14 +319,14 @@ namespace AuthAPI.Controllers
                 return Ok(new AuthResponseDto
                 {
                     IsSuccess = true,
-                    Message = "Password changed successfully"
+                    Message = "La contraseña se cambió correctamente"
                 });
             }
 
             return BadRequest(new AuthResponseDto
             {
                 IsSuccess = false,
-                Message = result.Errors.FirstOrDefault()?.Description ?? "Error changing password"
+                Message = result.Errors.FirstOrDefault()?.Description ?? "Error al cambiar la contraseña"
             });
         }
 
@@ -347,7 +342,7 @@ namespace AuthAPI.Controllers
                 return BadRequest(new AuthResponseDto
                 {
                     IsSuccess = false,
-                    Message = "User does not exist with this email"
+                    Message = "El usuario no existe con este correo electrónico"
                 });
             }
 
@@ -357,7 +352,7 @@ namespace AuthAPI.Controllers
                 return Ok(new AuthResponseDto
                 {
                     IsSuccess = true,
-                    Message = "Password reset Successfully"
+                    Message = "La contraseña se cambio con exito!"
                 });
             }
 
@@ -421,7 +416,7 @@ namespace AuthAPI.Controllers
                 return NotFound(new AuthResponseDto
                 {
                     IsSuccess = false,
-                    Message = "User not found"
+                    Message = "El usuario no fue encontrado"
                 });
             }
 

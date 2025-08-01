@@ -10,17 +10,21 @@ namespace AuthAPI.Model
 
         [Required]
         [ForeignKey("Client")]
-        public int ClientId { get; set; }
+        public string ClientId { get; set; } = null!;
+
+        public AppUser? Client { get; set; }
 
         [Required]
-        public string Comment { get; set; }
+        public string Comment { get; set; } = null!;
 
-        [Range(1, 5)]
+        [Required]
         public int Rating { get; set; }
 
-        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+        [Required]
+        public DateTime CreatedAt { get; set; }
 
-        // Nueva propiedad para la respuesta del admin
         public string? Reply { get; set; }
+
+        public DateTime? RepliedAt { get; set; }
     }
 }

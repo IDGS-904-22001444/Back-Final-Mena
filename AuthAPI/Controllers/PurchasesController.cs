@@ -43,6 +43,8 @@ namespace AuthAPI.Controllers
             return Ok(purchase);
         }
 
+
+
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] PurchaseDto dto)
         {

@@ -9,8 +9,8 @@ namespace AuthAPI.Model
         public int Id { get; set; }
 
         [Required]
-        [ForeignKey("Client")]
-        public int ClientId { get; set; }
+        [ForeignKey("AppUser")]
+        public string ClientId { get; set; } = null!; // GUID como string
 
         [Required]
         [ForeignKey("Product")]
@@ -28,7 +28,8 @@ namespace AuthAPI.Model
         [Required]
         public int Status { get; set; }
 
-        // Relaciones de navegación (opcional)
-        // public Role? Role { get; set; }
+        // Relaciones de navegación
+        public AppUser? Client { get; set; }
+        public Product? Product { get; set; }
     }
 }
