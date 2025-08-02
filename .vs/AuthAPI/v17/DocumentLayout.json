@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Jezuz\\OneDrive\\Escritorio\\ReptiTrack\\ProyectoMena\\Final-Mena\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Jezuz\\OneDrive\\Escritorio\\ReptiTrack\\ProyectoMena\\Final-Mena\\AuthAPI\\Migrations\\20250801104257_rese\u00F1asv2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:AuthAPI\\Migrations\\20250801104257_rese\u00F1asv2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A0BDD8BF-C580-4ACC-B471-DF785B1BFAD5}|AuthAPI\\AuthAPI.csproj|c:\\users\\jezuz\\onedrive\\escritorio\\reptitrack\\proyectomena\\final-mena\\authapi\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A0BDD8BF-C580-4ACC-B471-DF785B1BFAD5}|AuthAPI\\AuthAPI.csproj|solutionrelative:authapi\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0BDD8BF-C580-4ACC-B471-DF785B1BFAD5}|AuthAPI\\AuthAPI.csproj|c:\\users\\jezuz\\onedrive\\escritorio\\reptitrack\\proyectomena\\final-mena\\authapi\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0BDD8BF-C580-4ACC-B471-DF785B1BFAD5}|AuthAPI\\AuthAPI.csproj|solutionrelative:authapi\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0BDD8BF-C580-4ACC-B471-DF785B1BFAD5}|AuthAPI\\AuthAPI.csproj|c:\\users\\jezuz\\onedrive\\escritorio\\reptitrack\\proyectomena\\final-mena\\authapi\\controllers\\rolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0BDD8BF-C580-4ACC-B471-DF785B1BFAD5}|AuthAPI\\AuthAPI.csproj|solutionrelative:authapi\\controllers\\rolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0BDD8BF-C580-4ACC-B471-DF785B1BFAD5}|AuthAPI\\AuthAPI.csproj|c:\\users\\jezuz\\onedrive\\escritorio\\reptitrack\\proyectomena\\final-mena\\authapi\\migrations\\20250801104257_rese\u00F1asv2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0BDD8BF-C580-4ACC-B471-DF785B1BFAD5}|AuthAPI\\AuthAPI.csproj|solutionrelative:authapi\\migrations\\20250801104257_rese\u00F1asv2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A0BDD8BF-C580-4ACC-B471-DF785B1BFAD5}|AuthAPI\\AuthAPI.csproj|c:\\users\\jezuz\\onedrive\\escritorio\\reptitrack\\proyectomena\\final-mena\\authapi\\controllers\\customerreviewscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -19,10 +31,6 @@
       "RelativeMoniker": "D:0:0:{A0BDD8BF-C580-4ACC-B471-DF785B1BFAD5}|AuthAPI\\AuthAPI.csproj|solutionrelative:authapi\\dtos\\customerreviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A0BDD8BF-C580-4ACC-B471-DF785B1BFAD5}|AuthAPI\\AuthAPI.csproj|c:\\users\\jezuz\\onedrive\\escritorio\\reptitrack\\proyectomena\\final-mena\\authapi\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A0BDD8BF-C580-4ACC-B471-DF785B1BFAD5}|AuthAPI\\AuthAPI.csproj|solutionrelative:authapi\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A0BDD8BF-C580-4ACC-B471-DF785B1BFAD5}|AuthAPI\\AuthAPI.csproj|c:\\users\\jezuz\\onedrive\\escritorio\\reptitrack\\proyectomena\\final-mena\\authapi\\controllers\\salescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A0BDD8BF-C580-4ACC-B471-DF785B1BFAD5}|AuthAPI\\AuthAPI.csproj|solutionrelative:authapi\\controllers\\salescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -33,14 +41,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A0BDD8BF-C580-4ACC-B471-DF785B1BFAD5}|AuthAPI\\AuthAPI.csproj|c:\\users\\jezuz\\onedrive\\escritorio\\reptitrack\\proyectomena\\final-mena\\authapi\\controllers\\purchasescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A0BDD8BF-C580-4ACC-B471-DF785B1BFAD5}|AuthAPI\\AuthAPI.csproj|solutionrelative:authapi\\controllers\\purchasescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Jezuz\\OneDrive\\Escritorio\\ReptiTrack\\ProyectoMena\\Final-Mena\\AuthAPI\\Migrations\\20250801081029_ultimaaassss.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:AuthAPI\\Migrations\\20250801081029_ultimaaassss.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Jezuz\\OneDrive\\Escritorio\\ReptiTrack\\ProyectoMena\\Final-Mena\\AuthAPI\\Migrations\\20250801075821_ultimaaa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:AuthAPI\\Migrations\\20250801075821_ultimaaa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A0BDD8BF-C580-4ACC-B471-DF785B1BFAD5}|AuthAPI\\AuthAPI.csproj|c:\\users\\jezuz\\onedrive\\escritorio\\reptitrack\\proyectomena\\final-mena\\authapi\\dtos\\saledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -113,6 +113,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{A0BDD8BF-C580-4ACC-B471-DF785B1BFAD5}|AuthAPI\\AuthAPI.csproj|c:\\users\\jezuz\\onedrive\\escritorio\\reptitrack\\proyectomena\\final-mena\\authapi\\model\\purchase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A0BDD8BF-C580-4ACC-B471-DF785B1BFAD5}|AuthAPI\\AuthAPI.csproj|solutionrelative:authapi\\model\\purchase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0BDD8BF-C580-4ACC-B471-DF785B1BFAD5}|AuthAPI\\AuthAPI.csproj|c:\\users\\jezuz\\onedrive\\escritorio\\reptitrack\\proyectomena\\final-mena\\authapi\\migrations\\20250801081029_ultimaaassss.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0BDD8BF-C580-4ACC-B471-DF785B1BFAD5}|AuthAPI\\AuthAPI.csproj|solutionrelative:authapi\\migrations\\20250801081029_ultimaaassss.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0BDD8BF-C580-4ACC-B471-DF785B1BFAD5}|AuthAPI\\AuthAPI.csproj|c:\\users\\jezuz\\onedrive\\escritorio\\reptitrack\\proyectomena\\final-mena\\authapi\\migrations\\20250801075821_ultimaaa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0BDD8BF-C580-4ACC-B471-DF785B1BFAD5}|AuthAPI\\AuthAPI.csproj|solutionrelative:authapi\\migrations\\20250801075821_ultimaaa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -131,19 +139,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "20250801104257_rese\u00F1asv2.cs",
-              "DocumentMoniker": "C:\\Users\\Jezuz\\OneDrive\\Escritorio\\ReptiTrack\\ProyectoMena\\Final-Mena\\AuthAPI\\Migrations\\20250801104257_rese\u00F1asv2.cs",
-              "RelativeDocumentMoniker": "AuthAPI\\Migrations\\20250801104257_rese\u00F1asv2.cs",
-              "ToolTip": "C:\\Users\\Jezuz\\OneDrive\\Escritorio\\ReptiTrack\\ProyectoMena\\Final-Mena\\AuthAPI\\Migrations\\20250801104257_rese\u00F1asv2.cs",
-              "RelativeToolTip": "AuthAPI\\Migrations\\20250801104257_rese\u00F1asv2.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-01T10:42:57.479Z",
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\Users\\Jezuz\\OneDrive\\Escritorio\\ReptiTrack\\ProyectoMena\\Final-Mena\\AuthAPI\\.gitignore",
+              "RelativeDocumentMoniker": "AuthAPI\\.gitignore",
+              "ToolTip": "C:\\Users\\Jezuz\\OneDrive\\Escritorio\\ReptiTrack\\ProyectoMena\\Final-Mena\\AuthAPI\\.gitignore",
+              "RelativeToolTip": "AuthAPI\\.gitignore",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-08-02T06:55:24.051Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
+              "Title": "RolesController.cs",
+              "DocumentMoniker": "C:\\Users\\Jezuz\\OneDrive\\Escritorio\\ReptiTrack\\ProyectoMena\\Final-Mena\\AuthAPI\\Controllers\\RolesController.cs",
+              "RelativeDocumentMoniker": "AuthAPI\\Controllers\\RolesController.cs",
+              "ToolTip": "C:\\Users\\Jezuz\\OneDrive\\Escritorio\\ReptiTrack\\ProyectoMena\\Final-Mena\\AuthAPI\\Controllers\\RolesController.cs",
+              "RelativeToolTip": "AuthAPI\\Controllers\\RolesController.cs",
+              "ViewState": "AgIAAHwAAAAAAAAAAADwv4sAAAB1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-02T05:31:14.617Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "CustomerReviewsController.cs",
               "DocumentMoniker": "C:\\Users\\Jezuz\\OneDrive\\Escritorio\\ReptiTrack\\ProyectoMena\\Final-Mena\\AuthAPI\\Controllers\\CustomerReviewsController.cs",
               "RelativeDocumentMoniker": "AuthAPI\\Controllers\\CustomerReviewsController.cs",
@@ -151,64 +172,11 @@
               "RelativeToolTip": "AuthAPI\\Controllers\\CustomerReviewsController.cs",
               "ViewState": "AgIAABoAAAAAAAAAAAAAABgAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-30T05:23:28.506Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-30T05:23:28.506Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CustomerReview.cs",
-              "DocumentMoniker": "C:\\Users\\Jezuz\\OneDrive\\Escritorio\\ReptiTrack\\ProyectoMena\\Final-Mena\\AuthAPI\\Model\\CustomerReview.cs",
-              "RelativeDocumentMoniker": "AuthAPI\\Model\\CustomerReview.cs",
-              "ToolTip": "C:\\Users\\Jezuz\\OneDrive\\Escritorio\\ReptiTrack\\ProyectoMena\\Final-Mena\\AuthAPI\\Model\\CustomerReview.cs",
-              "RelativeToolTip": "AuthAPI\\Model\\CustomerReview.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAAAB0AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-30T05:21:11.295Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CustomerReviewDto.cs",
-              "DocumentMoniker": "C:\\Users\\Jezuz\\OneDrive\\Escritorio\\ReptiTrack\\ProyectoMena\\Final-Mena\\AuthAPI\\Dtos\\CustomerReviewDto.cs",
-              "RelativeDocumentMoniker": "AuthAPI\\Dtos\\CustomerReviewDto.cs",
-              "ToolTip": "C:\\Users\\Jezuz\\OneDrive\\Escritorio\\ReptiTrack\\ProyectoMena\\Final-Mena\\AuthAPI\\Dtos\\CustomerReviewDto.cs",
-              "RelativeToolTip": "AuthAPI\\Dtos\\CustomerReviewDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-01T10:13:56.89Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Sale.cs",
-              "DocumentMoniker": "C:\\Users\\Jezuz\\OneDrive\\Escritorio\\ReptiTrack\\ProyectoMena\\Final-Mena\\AuthAPI\\Model\\Sale.cs",
-              "RelativeDocumentMoniker": "AuthAPI\\Model\\Sale.cs",
-              "ToolTip": "C:\\Users\\Jezuz\\OneDrive\\Escritorio\\ReptiTrack\\ProyectoMena\\Final-Mena\\AuthAPI\\Model\\Sale.cs",
-              "RelativeToolTip": "AuthAPI\\Model\\Sale.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAADwvyIAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-26T08:08:11.685Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "SalesController.cs",
-              "DocumentMoniker": "C:\\Users\\Jezuz\\OneDrive\\Escritorio\\ReptiTrack\\ProyectoMena\\Final-Mena\\AuthAPI\\Controllers\\SalesController.cs",
-              "RelativeDocumentMoniker": "AuthAPI\\Controllers\\SalesController.cs",
-              "ToolTip": "C:\\Users\\Jezuz\\OneDrive\\Escritorio\\ReptiTrack\\ProyectoMena\\Final-Mena\\AuthAPI\\Controllers\\SalesController.cs",
-              "RelativeToolTip": "AuthAPI\\Controllers\\SalesController.cs",
-              "ViewState": "AgIAAGYAAAAAAAAAAAAAAHEAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-01T08:30:10.304Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "AccountController.cs",
               "DocumentMoniker": "C:\\Users\\Jezuz\\OneDrive\\Escritorio\\ReptiTrack\\ProyectoMena\\Final-Mena\\AuthAPI\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "AuthAPI\\Controllers\\AccountController.cs",
@@ -221,7 +189,70 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "20250801104257_rese\u00F1asv2.cs",
+              "DocumentMoniker": "C:\\Users\\Jezuz\\OneDrive\\Escritorio\\ReptiTrack\\ProyectoMena\\Final-Mena\\AuthAPI\\Migrations\\20250801104257_rese\u00F1asv2.cs",
+              "RelativeDocumentMoniker": "AuthAPI\\Migrations\\20250801104257_rese\u00F1asv2.cs",
+              "ToolTip": "C:\\Users\\Jezuz\\OneDrive\\Escritorio\\ReptiTrack\\ProyectoMena\\Final-Mena\\AuthAPI\\Migrations\\20250801104257_rese\u00F1asv2.cs",
+              "RelativeToolTip": "AuthAPI\\Migrations\\20250801104257_rese\u00F1asv2.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T10:42:57.479Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CustomerReview.cs",
+              "DocumentMoniker": "C:\\Users\\Jezuz\\OneDrive\\Escritorio\\ReptiTrack\\ProyectoMena\\Final-Mena\\AuthAPI\\Model\\CustomerReview.cs",
+              "RelativeDocumentMoniker": "AuthAPI\\Model\\CustomerReview.cs",
+              "ToolTip": "C:\\Users\\Jezuz\\OneDrive\\Escritorio\\ReptiTrack\\ProyectoMena\\Final-Mena\\AuthAPI\\Model\\CustomerReview.cs",
+              "RelativeToolTip": "AuthAPI\\Model\\CustomerReview.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAAB0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-30T05:21:11.295Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CustomerReviewDto.cs",
+              "DocumentMoniker": "C:\\Users\\Jezuz\\OneDrive\\Escritorio\\ReptiTrack\\ProyectoMena\\Final-Mena\\AuthAPI\\Dtos\\CustomerReviewDto.cs",
+              "RelativeDocumentMoniker": "AuthAPI\\Dtos\\CustomerReviewDto.cs",
+              "ToolTip": "C:\\Users\\Jezuz\\OneDrive\\Escritorio\\ReptiTrack\\ProyectoMena\\Final-Mena\\AuthAPI\\Dtos\\CustomerReviewDto.cs",
+              "RelativeToolTip": "AuthAPI\\Dtos\\CustomerReviewDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T10:13:56.89Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Sale.cs",
+              "DocumentMoniker": "C:\\Users\\Jezuz\\OneDrive\\Escritorio\\ReptiTrack\\ProyectoMena\\Final-Mena\\AuthAPI\\Model\\Sale.cs",
+              "RelativeDocumentMoniker": "AuthAPI\\Model\\Sale.cs",
+              "ToolTip": "C:\\Users\\Jezuz\\OneDrive\\Escritorio\\ReptiTrack\\ProyectoMena\\Final-Mena\\AuthAPI\\Model\\Sale.cs",
+              "RelativeToolTip": "AuthAPI\\Model\\Sale.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAADwvyIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T08:08:11.685Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "SalesController.cs",
+              "DocumentMoniker": "C:\\Users\\Jezuz\\OneDrive\\Escritorio\\ReptiTrack\\ProyectoMena\\Final-Mena\\AuthAPI\\Controllers\\SalesController.cs",
+              "RelativeDocumentMoniker": "AuthAPI\\Controllers\\SalesController.cs",
+              "ToolTip": "C:\\Users\\Jezuz\\OneDrive\\Escritorio\\ReptiTrack\\ProyectoMena\\Final-Mena\\AuthAPI\\Controllers\\SalesController.cs",
+              "RelativeToolTip": "AuthAPI\\Controllers\\SalesController.cs",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAAAHEAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T08:30:10.304Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "PurchasesController.cs",
               "DocumentMoniker": "C:\\Users\\Jezuz\\OneDrive\\Escritorio\\ReptiTrack\\ProyectoMena\\Final-Mena\\AuthAPI\\Controllers\\PurchasesController.cs",
               "RelativeDocumentMoniker": "AuthAPI\\Controllers\\PurchasesController.cs",
@@ -234,7 +265,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 28,
               "Title": "20250801081029_ultimaaassss.cs",
               "DocumentMoniker": "C:\\Users\\Jezuz\\OneDrive\\Escritorio\\ReptiTrack\\ProyectoMena\\Final-Mena\\AuthAPI\\Migrations\\20250801081029_ultimaaassss.cs",
               "RelativeDocumentMoniker": "AuthAPI\\Migrations\\20250801081029_ultimaaassss.cs",
@@ -242,8 +273,7 @@
               "RelativeToolTip": "AuthAPI\\Migrations\\20250801081029_ultimaaassss.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-01T08:10:29.713Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-01T08:10:29.713Z"
             },
             {
               "$type": "Document",
@@ -255,12 +285,11 @@
               "RelativeToolTip": "AuthAPI\\Dtos\\SaleDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-01T07:55:38.187Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-01T07:55:38.187Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 29,
               "Title": "20250801075821_ultimaaa.cs",
               "DocumentMoniker": "C:\\Users\\Jezuz\\OneDrive\\Escritorio\\ReptiTrack\\ProyectoMena\\Final-Mena\\AuthAPI\\Migrations\\20250801075821_ultimaaa.cs",
               "RelativeDocumentMoniker": "AuthAPI\\Migrations\\20250801075821_ultimaaa.cs",
@@ -268,8 +297,7 @@
               "RelativeToolTip": "AuthAPI\\Migrations\\20250801075821_ultimaaa.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-01T07:58:21.475Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-01T07:58:21.475Z"
             },
             {
               "$type": "Document",
@@ -281,8 +309,7 @@
               "RelativeToolTip": "AuthAPI\\Controllers\\ProductsController.cs",
               "ViewState": "AgIAADgAAAAAAAAAAAAqwF8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-01T02:37:41.338Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-01T02:37:41.338Z"
             },
             {
               "$type": "Document",
@@ -294,8 +321,7 @@
               "RelativeToolTip": "AuthAPI\\Migrations\\20250725040946_InitialCreate.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-31T23:57:52.321Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-31T23:57:52.321Z"
             },
             {
               "$type": "Document",
@@ -307,8 +333,7 @@
               "RelativeToolTip": "AuthAPI\\Migrations\\20250731054111_Response.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-31T05:41:13.086Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-31T05:41:13.086Z"
             },
             {
               "$type": "Document",
@@ -356,8 +381,7 @@
               "RelativeToolTip": "AuthAPI\\Data\\AppDbContext.cs",
               "ViewState": "AgIAABEAAAAAAAAAAAAwwBoAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-30T05:23:48.893Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-30T05:23:48.893Z"
             },
             {
               "$type": "Document",
@@ -418,7 +442,8 @@
               "RelativeToolTip": "AuthAPI\\Dtos\\RolesAssingDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-28T01:02:44.569Z"
+              "WhenOpened": "2025-07-28T01:02:44.569Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -442,8 +467,7 @@
               "RelativeToolTip": "AuthAPI\\Dtos\\PurchaseDetailDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-26T22:10:44.884Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-26T22:10:44.884Z"
             },
             {
               "$type": "Document",
@@ -455,8 +479,7 @@
               "RelativeToolTip": "AuthAPI\\Dtos\\PurchaseDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-26T22:09:20.645Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-26T22:09:20.645Z"
             },
             {
               "$type": "Document",
@@ -481,8 +504,7 @@
               "RelativeToolTip": "AuthAPI\\Model\\Purchase.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-26T21:10:07.839Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-26T21:10:07.839Z"
             }
           ]
         }
