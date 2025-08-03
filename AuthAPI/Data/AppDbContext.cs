@@ -21,9 +21,8 @@ namespace AuthAPI.Data
         public DbSet<ProductMaterial> ProductMaterials { get; set; }
         public DbSet<GeneralStatus> GeneralStatuses { get; set; }
         public DbSet<QuotationStatus> QuotationStatuses { get; set; }
-        public DbSet<Quotations> Quotations { get; set; }
         public DbSet<CustomerReview> CustomerReviews { get; set; }
-
+        public DbSet<QuotationRequest> QuotationRequests { get; set; }
         public DbSet<Faq> Faqs { get; set; }
     }
 }

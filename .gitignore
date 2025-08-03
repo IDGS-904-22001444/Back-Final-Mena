@@ -1,0 +1,13 @@
+# Archivos de Visual Studio y carpetas
+.vs/
+*.suo
+*.user
+*.log
+
+# Archivos binarios y de compilación
+bin/
+obj/
+
+# Archivos específicos de C#
+AuthAPI/bin/
+AuthAPI/obj/

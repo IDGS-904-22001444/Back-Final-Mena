@@ -21,9 +21,21 @@ namespace AuthAPI.Controllers
         // GET: api/products
         [HttpGet]
         [AllowAnonymous]
-        public async Task<ActionResult<IEnumerable<Product>>> GetAll()
+        public async Task<ActionResult<IEnumerable<ProductDto>>> GetProducts()
         {
-            var products = await _context.Products.ToListAsync();
+            var products = await _context.Products
+                .Select(p => new ProductDto
+                {
+                    ProductId = p.ProductId,
+                    Name = p.Name,
+                    Description = p.Description,
+                    SalePrice = p.SalePrice,
+                    Stock = p.Stock,
+                    Status = p.Status,
+                    ImageUrl = p.ImageUrl // Mapea la imagen
+                })
+                .ToListAsync();
+
             return Ok(products);
         }
 
@@ -41,22 +53,21 @@ namespace AuthAPI.Controllers
         // POST: api/products
         [HttpPost]
         [Authorize(Roles = "Admin")]
-        public async Task<IActionResult> Create([FromBody] ProductDto dto)
+        public async Task<IActionResult> CreateProduct([FromBody] ProductDto dto)
         {
-            if (!ModelState.IsValid)
-                return BadRequest(ModelState);
-
             var product = new Product
             {
                 Name = dto.Name,
                 Description = dto.Description,
                 SalePrice = dto.SalePrice,
                 Stock = dto.Stock,
-                Status = dto.Status
+                Status = dto.Status,
+                ImageUrl = dto.ImageUrl // <-- Aquí debe asignarse
             };
 
             _context.Products.Add(product);
             await _context.SaveChangesAsync();
+
             return Ok(product);
         }
 

@@ -4,6 +4,7 @@ using AuthAPI.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AuthAPI.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250802121420_poi")]
+    partial class poi
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -333,70 +336,6 @@ namespace AuthAPI.Migrations
                     b.HasIndex("RawMaterialId");
 
                     b.ToTable("PurchaseDetails");
-                });
-
-            modelBuilder.Entity("AuthAPI.Model.QuotationRequest", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<bool>("AcceptsInfo")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("AnimalType")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Comments")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Company")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Country")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Email")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("FirstName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("LastName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<bool>("NeedBiologyResearch")
-                        .HasColumnType("bit");
-
-                    b.Property<bool>("NeedHabitatSystem")
-                        .HasColumnType("bit");
-
-                    b.Property<bool>("NeedNaturalReserves")
-                        .HasColumnType("bit");
-
-                    b.Property<bool>("NeedOther")
-                        .HasColumnType("bit");
-
-                    b.Property<bool>("NeedZoosAquariums")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("Phone")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Region")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("QuotationRequests");
                 });
 
             modelBuilder.Entity("AuthAPI.Model.QuotationStatus", b =>
