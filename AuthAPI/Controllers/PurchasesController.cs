@@ -86,6 +86,43 @@ namespace AuthAPI.Controllers
                         return BadRequest($"La materia prima con ID {detailDto.RawMaterialId} no existe.");
 
                     rawMaterial.Stock += detailDto.Quantity;
+
+                    // Registrar movimiento de entrada en RawMaterialMovements
+                    var lastMovement = await _context.RawMaterialMovements
+                        .Where(m => m.RawMaterialId == detailDto.RawMaterialId)
+                        .OrderByDescending(m => m.Date)
+                        .ThenByDescending(m => m.MovementId)
+                        .FirstOrDefaultAsync();
+
+                    int prevStock = lastMovement?.CurrentStock ?? 0;
+                    decimal prevBalance = lastMovement?.Balance ?? 0;
+                    decimal prevAverage = lastMovement?.Average ?? 0;
+
+                    int entrada = detailDto.Quantity;
+                    int salida = 0;
+
+                    int newStock = prevStock + entrada - salida;
+                    decimal debe = entrada * detailDto.UnitPrice;
+                    decimal hecho = salida * prevAverage;
+                    decimal newBalance = prevBalance + debe - hecho;
+                    decimal newAverage = newStock > 0 ? Math.Round(newBalance / newStock, 2) : 0;
+
+                    var movement = new RawMaterialMovement
+                    {
+                        RawMaterialId = detailDto.RawMaterialId,
+                        Date = DateTime.UtcNow,
+                        EntryQuantity = entrada,
+                        ExitQuantity = salida,
+                        CurrentStock = newStock,
+                        Cost = detailDto.UnitPrice,
+                        Average = newAverage,
+                        Debit = debe,
+                        Credit = hecho,
+                        Balance = newBalance,
+                        Status = 1
+                    };
+
+                    _context.RawMaterialMovements.Add(movement);
                 }
 
                 await _context.SaveChangesAsync();
@@ -93,6 +130,7 @@ namespace AuthAPI.Controllers
 
             return Ok(purchase);
         }
+
 
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(int id, [FromBody] PurchaseDto dto)

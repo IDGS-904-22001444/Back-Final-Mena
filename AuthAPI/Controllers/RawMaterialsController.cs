@@ -53,6 +53,37 @@ namespace AuthAPI.Controllers
 
             _context.RawMaterials.Add(material);
             await _context.SaveChangesAsync();
+
+            // Registrar movimiento inicial si el stock es mayor a 0
+            if (material.Stock > 0)
+            {
+                int entrada = material.Stock;
+                int salida = 0;
+                int newStock = entrada;
+                decimal debe = entrada * material.UnitCost;
+                decimal hecho = 0;
+                decimal newBalance = debe;
+                decimal newAverage = entrada > 0 ? Math.Round(newBalance / entrada, 2) : 0;
+
+                var movement = new RawMaterialMovement
+                {
+                    RawMaterialId = material.Id,
+                    Date = DateTime.UtcNow,
+                    EntryQuantity = entrada,
+                    ExitQuantity = salida,
+                    CurrentStock = newStock,
+                    Cost = material.UnitCost,
+                    Average = newAverage,
+                    Debit = debe,
+                    Credit = hecho,
+                    Balance = newBalance,
+                    Status = 1
+                };
+
+                _context.RawMaterialMovements.Add(movement);
+                await _context.SaveChangesAsync();
+            }
+
             return Ok(material);
         }
 
