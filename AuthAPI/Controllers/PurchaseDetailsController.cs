@@ -43,6 +43,20 @@ namespace AuthAPI.Controllers
             return Ok(detail);
         }
 
+        [HttpGet("by-purchase/{purchaseId}")]
+        public async Task<ActionResult<IEnumerable<PurchaseDetail>>> GetByPurchaseId(int purchaseId)
+        {
+            var details = await _context.PurchaseDetails
+                .Include(d => d.RawMaterial)
+                .Where(d => d.PurchaseId == purchaseId)
+                .ToListAsync();
+
+            if (details == null || !details.Any())
+                return NotFound();
+
+            return Ok(details);
+        }
+
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] PurchaseDetailDto dto)
         {

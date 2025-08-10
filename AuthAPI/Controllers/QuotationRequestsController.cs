@@ -52,7 +52,7 @@ namespace AuthAPI.Controllers
 
         // GET: api/QuotationRequests
         [HttpGet]
-        [Authorize(Roles = "Admin")]
+        [AllowAnonymous]
         public async Task<ActionResult<IEnumerable<QuotationRequest>>> GetAll()
         {
             var list = await _context.QuotationRequests.ToListAsync();

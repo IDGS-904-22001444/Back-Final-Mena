@@ -119,9 +119,8 @@ namespace AuthAPI.Controllers
 
                 var message = new MimeKit.MimeMessage();
                 message.From.Add(new MimeKit.MailboxAddress(senderName, senderEmail));
-                // Usar UserName como email de destino (es el email en tu base)
                 message.To.Add(new MimeKit.MailboxAddress(user.FullName ?? user.UserName, user.UserName));
-                message.Subject = "¡Nuevo rol asignado en ReptiTrack!";
+                message.Subject = "¡Ya puedes iniciar sesión en ReptiTrack!";
 
                 var htmlBody = $@"
 <div style='max-width:600px;margin:30px auto;padding:0;background:#f9f9f9;border-radius:16px;box-shadow:0 2px 8px rgba(0,0,0,0.07);font-family:Segoe UI,Arial,sans-serif;color:#222;'>
@@ -131,13 +130,10 @@ namespace AuthAPI.Controllers
                 {(string.IsNullOrWhiteSpace(user.FullName) ? "U" : user.FullName.Substring(0, 1).ToUpper())}
             </div>
         </div>
-        <h2 style='color:#43a047;font-size:1.7em;margin-bottom:24px;margin-top:0;'>¡Nuevo rol asignado!</h2>
+        <h2 style='color:#43a047;font-size:1.7em;margin-bottom:24px;margin-top:0;'>¡Acceso habilitado!</h2>
         <p style='font-size:1.1em;'>Hola <b>{user.FullName ?? user.UserName}</b>,</p>
-        <p style='margin:18px 0 24px 0;'>Te informamos que se te ha asignado el siguiente rol en la plataforma:</p>
-        <div style='display:inline-block;padding:14px 32px;background:#e3f2fd;color:#1976d2;border-radius:8px;font-size:18px;font-weight:bold;margin-bottom:24px;'>
-            {role.Name}
-        </div>
-        <p style='margin:24px 0 0 0;'>Accede a tu cuenta para realizar tus compras, gracias por confiar en ReptiTrack.</p>
+        <p style='margin:18px 0 24px 0;'>Tu cuenta ya tiene permisos para acceder a la plataforma ReptiTrack.</p>
+        <p style='margin:24px 0 0 0;'>Accede a tu cuenta para realizar tus compras y gestiones. ¡Gracias por confiar en ReptiTrack!</p>
         <div style='text-align:center;color:#888;font-size:14px;margin-top:30px;'>
             ReptiTrack &copy; {DateTime.Now.Year}
         </div>
@@ -155,7 +151,6 @@ namespace AuthAPI.Controllers
             }
             catch (Exception ex)
             {
-                // Si falla el envío de correo, el rol ya fue asignado, pero se notifica el error de correo
                 return Ok(new
                 {
                     message = "Rol asignado correctamente, pero hubo un error al enviar la notificación por correo.",
