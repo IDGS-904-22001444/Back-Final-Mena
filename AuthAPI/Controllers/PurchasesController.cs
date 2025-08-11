@@ -43,8 +43,6 @@ namespace AuthAPI.Controllers
             return Ok(purchase);
         }
 
-
-
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] PurchaseDto dto)
         {
@@ -66,6 +64,8 @@ namespace AuthAPI.Controllers
             // Si hay detalles, los insertamos
             if (dto.Details != null && dto.Details.Any())
             {
+                var rawMaterialIdsToUpdate = new HashSet<int>();
+
                 foreach (var detailDto in dto.Details)
                 {
                     var detail = new PurchaseDetail
@@ -123,14 +123,25 @@ namespace AuthAPI.Controllers
                     };
 
                     _context.RawMaterialMovements.Add(movement);
+
+                    // Actualizar el UnitCost y Stock de la materia prima
+                    rawMaterial.UnitCost = newAverage;
+                    rawMaterial.Stock = newStock;
+
+                    rawMaterialIdsToUpdate.Add(detailDto.RawMaterialId);
                 }
 
                 await _context.SaveChangesAsync();
+
+                // Actualizar el precio de los productos que usan las materias primas afectadas
+                foreach (var rawMaterialId in rawMaterialIdsToUpdate)
+                {
+                    await UpdateProductPricesByRawMaterial(rawMaterialId);
+                }
             }
 
             return Ok(purchase);
         }
-
 
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(int id, [FromBody] PurchaseDto dto)
@@ -159,6 +170,37 @@ namespace AuthAPI.Controllers
             _context.Purchases.Remove(purchase);
             await _context.SaveChangesAsync();
             return NoContent();
+        }
+
+        /// <summary>
+        /// Actualiza el precio de venta de todos los productos que usan la materia prima modificada.
+        /// </summary>
+        private async Task UpdateProductPricesByRawMaterial(int rawMaterialId)
+        {
+            var productMaterials = await _context.ProductMaterials
+                .Where(pm => pm.RawMaterialId == rawMaterialId && pm.Status == 1)
+                .ToListAsync();
+
+            var productIds = productMaterials.Select(pm => pm.ProductId).Distinct();
+
+            foreach (var productId in productIds)
+            {
+                var materials = await _context.ProductMaterials
+                    .Where(pm => pm.ProductId == productId && pm.Status == 1)
+                    .Include(pm => pm.RawMaterial)
+                    .ToListAsync();
+
+                decimal totalCost = materials.Sum(pm => pm.RequiredQuantity * (pm.RawMaterial?.UnitCost ?? 0));
+                decimal finalPrice = Math.Round(totalCost * 1.25m, 2);
+
+                var product = await _context.Products.FindAsync(productId);
+                if (product != null)
+                {
+                    product.SalePrice = finalPrice;
+                }
+            }
+
+            await _context.SaveChangesAsync();
         }
     }
 }

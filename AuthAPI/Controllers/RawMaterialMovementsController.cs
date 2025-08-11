@@ -64,6 +64,19 @@ namespace AuthAPI.Controllers
 
             _context.RawMaterialMovements.Add(movement);
             await _context.SaveChangesAsync();
+
+            // Actualizar el UnitCost de la materia prima con el nuevo promedio
+            var rawMaterial = await _context.RawMaterials.FindAsync(dto.RawMaterialId);
+            if (rawMaterial != null)
+            {
+                rawMaterial.UnitCost = newAverage;
+                rawMaterial.Stock = newStock;
+                await _context.SaveChangesAsync();
+            }
+
+            // Actualizar el precio de los productos que usan esta materia prima
+            await UpdateProductPricesByRawMaterial(dto.RawMaterialId);
+
             return Ok(movement);
         }
 
@@ -95,6 +108,41 @@ namespace AuthAPI.Controllers
             }
 
             return Ok(kardex);
+        }
+
+        /// <summary>
+        /// Actualiza el precio de venta de todos los productos que usan la materia prima modificada.
+        /// </summary>
+        private async Task UpdateProductPricesByRawMaterial(int rawMaterialId)
+        {
+            // Busca todos los productos que usan esta materia prima
+            var productMaterials = await _context.ProductMaterials
+                .Where(pm => pm.RawMaterialId == rawMaterialId && pm.Status == 1)
+                .ToListAsync();
+
+            var productIds = productMaterials.Select(pm => pm.ProductId).Distinct();
+
+            foreach (var productId in productIds)
+            {
+                // Obtén todos los materiales activos del producto
+                var materials = await _context.ProductMaterials
+                    .Where(pm => pm.ProductId == productId && pm.Status == 1)
+                    .Include(pm => pm.RawMaterial)
+                    .ToListAsync();
+
+                // Calcula el costo total
+                decimal totalCost = materials.Sum(pm => pm.RequiredQuantity * (pm.RawMaterial?.UnitCost ?? 0));
+                decimal finalPrice = Math.Round(totalCost * 1.25m, 2);
+
+                // Actualiza el precio del producto
+                var product = await _context.Products.FindAsync(productId);
+                if (product != null)
+                {
+                    product.SalePrice = finalPrice;
+                }
+            }
+
+            await _context.SaveChangesAsync();
         }
     }
 }

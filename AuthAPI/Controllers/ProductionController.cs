@@ -36,14 +36,24 @@ namespace AuthAPI.Controllers
                 .Include(pm => pm.RawMaterial)
                 .ToListAsync();
 
-            // Verificar stock suficiente
+            // Verificar stock suficiente y recolectar faltantes
+            var faltantes = new List<string>();
             foreach (var mat in materiales)
             {
                 var requerido = mat.RequiredQuantity * dto.QuantityToProduce;
                 if (mat.RawMaterial == null || mat.RawMaterial.Stock < requerido)
                 {
-                    return BadRequest($"Stock insuficiente de {mat.RawMaterial?.Name ?? "materia prima"}.");
+                    faltantes.Add(mat.RawMaterial?.Name ?? $"ID:{mat.RawMaterialId}");
                 }
+            }
+
+            if (faltantes.Any())
+            {
+                return BadRequest(new
+                {
+                    message = "No hay suficiente stock para producir el producto.",
+                    faltantes = faltantes
+                });
             }
 
             // Descontar materias primas y registrar movimientos
@@ -88,6 +98,13 @@ namespace AuthAPI.Controllers
                 };
 
                 _context.RawMaterialMovements.Add(movement);
+
+                // Actualizar el UnitCost y Stock de la materia prima
+                mat.RawMaterial.UnitCost = newAverage;
+                mat.RawMaterial.Stock = newStock;
+
+                // Actualizar el precio de los productos que usan esta materia prima
+                await UpdateProductPricesByRawMaterial(mat.RawMaterialId);
             }
 
             // Aumentar stock del producto terminado
@@ -95,6 +112,37 @@ namespace AuthAPI.Controllers
 
             await _context.SaveChangesAsync();
             return Ok(new { message = "Producción realizada y stock actualizado." });
+        }
+
+        /// <summary>
+        /// Actualiza el precio de venta de todos los productos que usan la materia prima modificada.
+        /// </summary>
+        private async Task UpdateProductPricesByRawMaterial(int rawMaterialId)
+        {
+            var productMaterials = await _context.ProductMaterials
+                .Where(pm => pm.RawMaterialId == rawMaterialId && pm.Status == 1)
+                .ToListAsync();
+
+            var productIds = productMaterials.Select(pm => pm.ProductId).Distinct();
+
+            foreach (var productId in productIds)
+            {
+                var materials = await _context.ProductMaterials
+                    .Where(pm => pm.ProductId == productId && pm.Status == 1)
+                    .Include(pm => pm.RawMaterial)
+                    .ToListAsync();
+
+                decimal totalCost = materials.Sum(pm => pm.RequiredQuantity * (pm.RawMaterial?.UnitCost ?? 0));
+                decimal finalPrice = Math.Round(totalCost * 1.25m, 2);
+
+                var product = await _context.Products.FindAsync(productId);
+                if (product != null)
+                {
+                    product.SalePrice = finalPrice;
+                }
+            }
+
+            await _context.SaveChangesAsync();
         }
     }
 }
