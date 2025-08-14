@@ -4,6 +4,7 @@ using AuthAPI.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AuthAPI.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250811044512_Finalisima")]
+    partial class Finalisima
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -402,29 +405,6 @@ namespace AuthAPI.Migrations
                     b.ToTable("QuotationRequests");
                 });
 
-            modelBuilder.Entity("AuthAPI.Model.QuotationRequestProduct", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("ProductId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("QuotationRequestId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("ProductId");
-
-                    b.HasIndex("QuotationRequestId");
-
-                    b.ToTable("QuotationRequestProducts");
-                });
-
             modelBuilder.Entity("AuthAPI.Model.QuotationStatus", b =>
                 {
                     b.Property<int>("Id")
@@ -757,25 +737,6 @@ namespace AuthAPI.Migrations
                     b.Navigation("Purchase");
 
                     b.Navigation("RawMaterial");
-                });
-
-            modelBuilder.Entity("AuthAPI.Model.QuotationRequestProduct", b =>
-                {
-                    b.HasOne("AuthAPI.Model.Product", "Product")
-                        .WithMany()
-                        .HasForeignKey("ProductId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("AuthAPI.Model.QuotationRequest", "QuotationRequest")
-                        .WithMany()
-                        .HasForeignKey("QuotationRequestId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Product");
-
-                    b.Navigation("QuotationRequest");
                 });
 
             modelBuilder.Entity("AuthAPI.Model.Sale", b =>

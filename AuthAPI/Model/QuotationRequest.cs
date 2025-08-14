@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace AuthAPI.Model
 {
@@ -40,5 +41,11 @@ namespace AuthAPI.Model
         public string? Comments { get; set; }
 
         public bool AcceptsInfo { get; set; }
+
+        // Nuevo campo para el producto cotizado
+        public int? ProductId { get; set; }
+
+        // Relación de navegación opcional
+        // public Product? Product { get; set; }
     }
 }

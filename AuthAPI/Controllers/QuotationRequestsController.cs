@@ -18,6 +18,26 @@ namespace AuthAPI.Controllers
             _context = context;
         }
 
+        // GET: api/QuotationRequests/products
+        [HttpGet("products")]
+        [AllowAnonymous]
+        public async Task<ActionResult<IEnumerable<object>>> GetAllProducts()
+        {
+            // Devuelve todos los productos, aunque no tengan stock
+            var products = await _context.Products
+                .Select(p => new
+                {
+                    ProductId = p.ProductId,
+                    Name = p.Name,
+                    Description = p.Description,
+                    SalePrice = p.SalePrice,
+                    Stock = p.Stock,
+                    Status = p.Status
+                })
+                .ToListAsync();
+            return Ok(products);
+        }
+
         // POST: api/QuotationRequests
         [HttpPost]
         [AllowAnonymous]
@@ -42,7 +62,8 @@ namespace AuthAPI.Controllers
                 NeedNaturalReserves = dto.NeedNaturalReserves,
                 NeedOther = dto.NeedOther,
                 Comments = dto.Comments,
-                AcceptsInfo = dto.AcceptsInfo
+                AcceptsInfo = dto.AcceptsInfo,
+                ProductId = dto.ProductId // Nuevo campo para el producto seleccionado
             };
 
             _context.QuotationRequests.Add(entity);
@@ -62,12 +83,28 @@ namespace AuthAPI.Controllers
         // GET: api/QuotationRequests/{id}
         [HttpGet("{id}")]
         [Authorize(Roles = "Admin")]
-        public async Task<ActionResult<QuotationRequest>> GetById(int id)
+        public async Task<ActionResult<object>> GetById(int id)
         {
             var entity = await _context.QuotationRequests.FindAsync(id);
             if (entity == null)
                 return NotFound();
-            return Ok(entity);
+
+            // Incluye el producto base cotizado en la respuesta
+            var product = entity.ProductId.HasValue
+                ? await _context.Products.FindAsync(entity.ProductId.Value)
+                : null;
+
+            return Ok(new
+            {
+                Quotation = entity,
+                Product = product == null ? null : new
+                {
+                    ProductId = product.ProductId,
+                    Name = product.Name,
+                    Description = product.Description,
+                    SalePrice = product.SalePrice
+                }
+            });
         }
 
         // PUT: api/QuotationRequests/{id}
@@ -94,6 +131,7 @@ namespace AuthAPI.Controllers
             entity.NeedOther = dto.NeedOther;
             entity.Comments = dto.Comments;
             entity.AcceptsInfo = dto.AcceptsInfo;
+            entity.ProductId = dto.ProductId; // Permite actualizar el producto cotizado
 
             await _context.SaveChangesAsync();
             return Ok(entity);

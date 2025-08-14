@@ -24,6 +24,8 @@ namespace AuthAPI.Dtos
         public string Region { get; set; } = null!;
 
         public string? Company { get; set; }
+        public int? ProductId { get; set; }
+
 
         public string? AnimalType { get; set; }
 
